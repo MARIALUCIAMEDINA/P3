@@ -17,11 +17,11 @@ defmodule VerificarNombre do
 
   def verificar_longitud(tupla) do
     {nombre, errores} = tupla
-    longiutd = String.length(nombre)
+    longitud = String.length(nombre)
     cond do
-      longiutd < 5 ->
+      longitud < 5 ->
        {nombre, errores ++ ["El nombre de usuario debe tener al menos 5 caracteres."]}
-      longiutd >= 5 and longiutd <= 12 ->
+      longitud >= 5 and longitud <= 12 ->
         {nombre, errores}
       true ->
         {nombre, errores ++ ["El nombre de usuario no debe exceder los 12 caracteres."]}

@@ -1,0 +1,1 @@
+elixir --sname nodocliente@cliente --cookie my_cookie nodo_cliente.exs

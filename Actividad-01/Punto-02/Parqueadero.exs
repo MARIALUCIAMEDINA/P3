@@ -5,7 +5,7 @@ defmodule Parqueadero do
       "Ingrese las horas que utilizo el parqueadero: "
       |>Util.ingresar(:entero)
 
-    freceunte =
+    frecuente =
       "¿Es un cliente frecuente?
       Ingrese 1 para SI o 0 para NO: "
       |>Util.ingresar(:entero)
@@ -21,7 +21,7 @@ defmodule Parqueadero do
       |>Util.ingresar(:entero)
 
     tarifa_subtotal = calcular_tarifa(horas_permanecia)
-    informacion_final = aplicar_descuentos(tarifa_subtotal, freceunte, vehiculo, fin_semana)
+    informacion_final = aplicar_descuentos(tarifa_subtotal, frecuente, vehiculo, fin_semana)
 
     generar_mensaje(informacion_final)
     |> Util.mostrar_mensaje()
